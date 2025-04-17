@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>いろまとの部屋</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg: #fefdf9;
+      --primary: #5c6ac4;
+      --text: #333;
+      --card: white;
+      --shadow: rgba(0, 0, 0, 0.08);
+      --accent: #f2e9e1;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Hiragino Kaku Gothic ProN', 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 1rem;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    .profile {
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px var(--shadow);
+      padding: 40px;
+      max-width: 720px;
+      margin-bottom: 40px;
+    }
+
+    .profile h2 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .profile p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+
+    .profile section {
+      margin-top: 24px;
+    }
+
+    .profile h3 {
+      margin-bottom: 6px;
+      font-size: 1.3rem;
+      color: #444;
+    }
+
+    .profile ul {
+      padding-left: 1.2em;
+      margin: 0;
+    }
+
+    .profile li {
+      margin-bottom: 8px;
+    }
+
+    .card {
+      background: var(--accent);
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #3e4ca5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin-left: 10px;
+        font-size: 0.9rem;
+      }
+
+      .profile, .card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>いろまとの部屋</h1>
+    <nav>
+      <a href="#">ホーム</a>
+      <a href="card">お知らせ</a>
+      <a href="#">コンタクト</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile">
+      <h2>自己紹介：いろまとの部屋へようこそ</h2>
+      <p>
+やあ、いろまとです！パソコンとプログラミング大好きなエンジニアタイプ。気づいたら長時間コードいじってるし、サーバー設定してる時間が心地いい。
+      </p>
+
+      <section>
+        <h3>💻 得意なこと</h3>
+        <ul>
+          <li><strong>サーバー構築とか仮想環境（特にProxmox）</strong>が得意</li>
+          <li>PHPやシェルスクリプトでサーバーサイドをガシガシ書いてる</li>
+          <li>複雑な作業をサクッと効率化するのが好き（タスク自動化なんて得意中の得意）</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>⚠️ やらかしたこと</h3>
+        <ul>
+          <li>ProxmoxでWebサーバーのOSディスクを消しちゃった（焦った）</li>
+          <li>scpコマンドで数日悩んだ（細かい差が大問題）</li>
+          <li>ファイル転送で / の付け忘れで迷子に…UNIXあるある体験</li>
+          <li>Proxmoxのメンテナンス中にマイグレート忘れて、サーバーがアクセス不能に</li>
+          <li>DSCサーバー崩壊の危機に…その後、復旧で一息</li>
+        </ul>
+      </section>
+      <section>
+        <h3>💬 一言</h3>
+        <p>エラーが出るのは当たり前！失敗しながら成長していくのが楽しいし、トラブルは仲間だと思ってる。一緒に学びながら成長できる仲間募集中だよ！</p>
+      </section>
+    </section>
+
+    <div class="card">
+      <h2>ほっこりお知らせ</h2>
+      <p>このサイトはまだ一部作成中です。公開までもうちょっとお待ちを 🍵</p>
+      <a class="btn" href="under-construction.html">準備中のページを見る</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 いろまと
+  </footer>
+</body>
+</html>
