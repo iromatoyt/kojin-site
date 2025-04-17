@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ページ作成中</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --main-bg: #fdfcf9;
+      --accent: #5c6ac4;
+      --text-color: #444;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--main-bg);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: var(--text-color);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .container {
+      text-align: center;
+      background: white;
+      padding: 50px 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px var(--shadow);
+      max-width: 420px;
+    }
+
+    .emoji {
+      font-size: 3.2rem;
+      animation: float 2.5s ease-in-out infinite;
+    }
+
+    h1 {
+      margin: 20px 0 10px;
+      font-size: 1.8rem;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="emoji">🍵</div>
+    <h1>ページはただいま準備中です</h1>
+    <p>おいしいお茶でも飲みながら、<br>もう少しだけお待ちくださいね。</p>
+  </div>
+</body>
+</html>
